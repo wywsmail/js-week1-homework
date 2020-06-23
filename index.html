@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Boostrap Index</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+    <link rel="stylesheet" href="./assets/style/all.css">
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h2 class="text-center bg-primary">
+            <a href="#" class="text-light">To do List</a>
+          </h2>
+        </div>
+        
+      </div>
+      <div class="row p-3">
+        <div class="col-6">
+          <input id="taskInput" type="text" class="w-100" placeholder=" + Add Task">
+        </div>
+        <div class="col-2">
+          <input id="deadLine" type="text" class="w-100" placeholder=" + Add Deadline">
+        </div>
+        <div class="col-2">
+          <input id="taskAdd" type="submit" class="w-100" value="加入任務">
+        </div>
+        <div class="col-2">
+          <input id="taskRemoveAll" type="submit" class="w-100" value="刪除全部">
+        </div>
+      </div>
+      <table class="table mt-4">
+  <thead class="thead-light">
+    <tr>
+      <th scope="col" class="text-center">編號</th>
+      <th scope="col" class="text-center">任務</th>
+      <th scope="col" class="text-center">期限</th>
+      <th scope="col" class="text-center">移除</th>
+    </tr>
+  </thead>
+  <tbody class="taskList"></tbody>
+</table>
+    </div>
+
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+  </body>
+
+</html>
